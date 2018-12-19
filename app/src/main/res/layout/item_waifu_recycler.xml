@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/margin_carview_categoria"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/margin_carview_categoria"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgWaifu"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/with_image"
+            android:layout_height="@dimen/height_image" />
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/margin_fab"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size_titulo"
+                android:textColor="@color/primary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtDescripcion"
+                android:text="Descripcion waifu"
+                android:textSize="16sp"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
